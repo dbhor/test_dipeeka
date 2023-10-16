@@ -1,0 +1,30 @@
+{
+        "server_details": {
+                "sdlan-ex3400-01": {
+                        "name": "sdlan-ex3400-01.englab.juniper.net",
+                        "dev_ip": "10.105.219.4",
+                        "dev_mac": "28a24b8f9ea6",
+                        "dev_site_id": "bc8a8b74-ac5e-4ee9-a228-32808fa8ee2b",
+                        "dev_password": "juniper123",
+                        "dev_user" : "root",
+                        "jump_server": "yes",
+                        "js_ip": "10.155.68.121",
+                        "js_password": "Embe1mpls",
+                        "up_down_if": ["ge-0/0/26"],
+                        "local_up_down_if": ["ge-0/0/2"],
+                        "ospf_if": "ge-0/0/25",
+                        "ospf_if_ip": "4.4.4.2/30",
+                        "js_ri": "no",
+                        "js_user" : "root",
+                        "event_time_interval": "450",
+                        "mist_api_url": "https://api.mistsys.com/api/v1",
+                        "mist_org_id": "9b853544-51e4-45fb-81ac-a442e4a111d0",
+                        "mist_dev_name": "ex3400",
+                        "mist_user": "dbhor@juniper.net",
+                        "mist_user_pass": "Ec2_ebs@2020",
+                        "nxt_srv_ip": "10.155.65.98",
+                        "nxt_srv_user": "root",
+                        "nxt_srv_password": "Embe1mpls"
+                }
+        }
+}

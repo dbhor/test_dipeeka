@@ -1,0 +1,10 @@
+Last login: Mon Jul 18 19:53:27 2022 from 10.107.11.206
+--- JUNOS 19.4R2-S3.2 Kernel 32-bit  JNPR-11.0-20200908.87c9d89_buil
+show ospf neighbor
+{master}
+labroot@re0.atsccaab1cw> show ospf neighbor 
+Address          Interface              State           ID               Pri  Dead
+100.127.252.49   ae201.0                Full            199.48.103.250   128    35
+
+{master}
+labroot@re0.atsccaab1cw> 

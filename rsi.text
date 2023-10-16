@@ -1,0 +1,221 @@
+
+
+root@re0.HYWRWIIO1CW> show system uptime no-forwarding
+
+Current time: 2022-05-23 14:46:56 UTC
+Time Source:  NTP CLOCK
+System booted: 2021-04-09 08:16:03 UTC (58w3d 06:30 ago)
+Protocols started: 2022-02-23 06:31:05 UTC (12w5d 08:15 ago)
+Last configured: 2022-05-18 09:00:49 UTC (5d 05:46 ago) by V442081
+ 2:46PM  up 409 days,  6:31, 1 users, load averages: 0.39, 0.35, 0.36
+
+
+root@re0.HYWRWIIO1CW> show version detail no-forwarding
+
+Hostname: re0.HYWRWIIO1CW
+Model: mx960
+Junos: 19.4R2-S3.2
+JUNOS Selective Update J7 [19.4R2-S3-J7]
+
+root@re0.HYWRWIIO1CW> show system core-dumps no-forwarding
+
+/var/crash/*core*: No such file or directory
+-rw-rw----  1 root  wheel    3356201 Sep 23  2020 /var/tmp/snmpd.core-tarball.0.tgz
+-rw-rw----  1 root  wheel    3129383 Sep 23  2020 /var/tmp/snmpd.core-tarball.1.tgz
+-rw-rw----  1 root  wheel    2689124 Sep 28  2020 /var/tmp/snmpd.core-tarball.2.tgz
+-rw-rw----  1 root  wheel    2437681 Sep 28  2020 /var/tmp/snmpd.core-tarball.3.tgz
+-rw-rw----  1 root  wheel    2429247 Sep 30  2020 /var/tmp/snmpd.core-tarball.4.tgz
+/var/tmp/pics/*core*: No such file or directory
+/var/crash/kernel.*: No such file or directory
+/var/jails/rest-api/tmp/*core*: No such file or directory
+/tftpboot/corefiles/*core*: No such file or directory
+total files: 5
+
+root@re0.HYWRWIIO1CW> show chassis alarms no-forwarding
+
+No alarms currently active
+
+
+root@re0.HYWRWIIO1CW> show chassis hardware detail no-forwarding
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                JN126661FAFA      MX960
+Midplane         REV 51   750-047849   ACRM6460          Enhanced MX960 Backplane
+FPM Board        REV 03   711-058968   ABDW8542          Front Panel Display
+PDM              Rev 01   740-063049   QCS2305507M       Power Distribution Module
+PEM 0            Rev 02   740-063048   QCS2326V12F       DC 4.1kW Power Entry Module
+PEM 1            Rev 02   740-063048   QCS2326V142       DC 4.1kW Power Entry Module
+PEM 2            Rev 02   740-063048   QCS2329V0DA       DC 4.1kW Power Entry Module
+PEM 3            Rev 02   740-063048   QCS2329V088       DC 4.1kW Power Entry Module
+Routing Engine 0 REV 19   750-054758   CANA0321          RE-S-2X00x6
+  vtbd0 17408 MB                                         Virtio Block Disk
+  vtbd1 15360 MB                                         Virtio Block Disk
+  ada0    511 MB  QEMU HARDDISK        QM00002           Emulated IDE Disk
+  usb0 (addr 0.1) XHCI root HUB 0      0x8086            uhub0
+Routing Engine 1 REV 19   750-054758   CANA0342          RE-S-2X00x6
+  vtbd0 17408 MB                                         Virtio Block Disk
+  vtbd1 15360 MB                                         Virtio Block Disk
+  ada0    511 MB  QEMU HARDDISK        QM00002           Emulated IDE Disk
+  usb0 (addr 0.1) XHCI root HUB 0      0x8086            uhub0
+CB 0             REV 12   750-062572   CAMW0234          Enhanced MX SCB 2
+CB 1             REV 12   750-062572   CAMW0233          Enhanced MX SCB 2
+CB 2             REV 12   750-062572   CANA2721          Enhanced MX SCB 2
+FPC 1            REV 39   750-054563   CAMY0802          MPC5E 3D 24XGE+6XLGE
+  CPU            REV 13   711-045719   CANA0606          RMPC PMB
+  PIC 0                   BUILTIN      BUILTIN           12X10GE SFPP OTN
+    Xcvr 0       wI;W^d   NON-JNPR     PRL69FC58102      SFP+-10G-LR
+    Xcvr 1                NON-JNPR     PRL69FC58099      SFP+-10G-LR
+    Xcvr 2                NON-JNPR     PRL69FC58107      SFP+-10G-LR
+    Xcvr 3                NON-JNPR     PRL69FC58104      SFP+-10G-LR
+  PIC 1                   BUILTIN      BUILTIN           12X10GE SFPP OTN
+  PIC 2                   BUILTIN      BUILTIN           3X40GE QSFPP
+  PIC 3                   BUILTIN      BUILTIN           3X40GE QSFPP
+    Xcvr 0       REV 01   740  2K-IR   PRL603483121      QSFP+-40G-LR4
+  WAN MEZZ       REV 17   750-049136   CAMV2408          MPC5E 24XGE OTN Mezz
+FPC 2            REV 53   750-056519   CARM3626          MPC7E 3D MRATE-12xQSFPP-XGE-XLGE-CGE
+  CPU            REV 22   750-057177   CARL1568          SMPC PMB
+  PIC 0                   BUILTIN      BUILTIN           MRATE-6xQSFPP-XGE-XLGE-CGE
+    Xcvr 2       REV 01   740-058732   1G3TQAA6120VN     QSFP-100GBASE-LR4
+    Xcvr 5       REV 01   740-058732   1G3TQAA6101QX     QSFP-100GBASE-LR4
+  PIC 1                   BUILTIN      BUILTIN           MRATE-6xQSFPP-XGE-XLGE-CGE
+FPC 9            REV 53   750-056519   CARM3708          MPC7E 3D MRATE-12xQSFPP-XGE-XLGE-CGE
+  CPU            REV 22   750-057177   CARL1535          SMPC PMB
+  PIC 0                   BUILTIN      BUILTIN           MRATE-6xQSFPP-XGE-XLGE-CGE
+    Xcvr 2       REV 01   740-058732   1G3TQAA6120WE     QSFP-100GBASE-LR4
+    Xcvr 5       REV 01   740-058732   1G3TQAA6071SC     QSFP-100GBASE-LR4
+  PIC 1                   BUILTIN      BUILTIN           MRATE-6xQSFPP-XGE-XLGE-CGE
+FPC 10           REV 39   750-054563   CAMX8863          MPC5E 3D 24XGE+6XLGE
+  CPU            REV 13   711-045719   CAMT6676          RMPC PMB
+  PIC 0                   BUILTIN      BUILTIN           12X10GE SFPP OTN
+    Xcvr 0       w        NON-JNPR     PRL69FC58108      SFP+-10G-LR
+    Xcvr 1       c        NON-JNPR     PRL69FC58100      SFP+-10G-LR
+    Xcvr 2       U        NON-JNPR     PRL69FC58103      SFP+-10G-LR
+    Xcvr 3                NON-JNPR     PRL69FC58101      SFP+-10G-LR
+  PIC 1                   BUILTIN      BUILTIN           12X10GE SFPP OTN
+  PIC 2                   BUILTIN      BUILTIN           3X40GE QSFPP
+  PIC 3                   BUILTIN      BUILTIN           3X40GE QSFPP
+    Xcvr 0       REV 01   740  2K-IR   PRL5CF298178      QSFP+-40G-LR4
+  WAN MEZZ       REV 17   750-049136   CAMM7922          MPC5E 24XGE OTN Mezz
+Fan Tray 0       REV 02   740-057995   DAAA1580          Enhanced Fan Tray
+Fan Tray 1       REV 02   740-057995   DAAA1966          Enhanced Fan Tray
+
+root@re0.HYWRWIIO1CW> show chassis hardware extensive no-forwarding
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                JN126661FAFA      MX960
+ Jedec Code:   0x7fb0            EEPROM Version:    0x02
+                                 S/N:               JN126661FAFA
+ Assembly ID:  0x0512            Assembly Version:  00.00
+ Date:         00-00-0000        Assembly Flags:    0x08
+ ID: MX960
+ Board Information Record:
+  Address 0x00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ I2C Hex Data:
+  Address 0x00: 7f b0 02 ff 05 12 00 00 00 00 00 00 00 00 00 00
+  Address 0x10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  Address 0x20: 4a 4e 31 32 36 36 36 31 46 41 46 41 08 00 00 00
+  Address 0x30: 00 00 00 ff 00 00 00 00 00 00 00 00 00 00 00 00
+  Address 0x40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  Address 0x50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  Address 0x60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  Address 0x70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Midplane         REV 51   750-047849   ACRM6460          Enhanced MX960 Backplane
+ Jedec Code:   0x7fb0            EEPROM Version:    0x02
+ P/N:          750-047849        S/N:               ACRM6460
+ Assembly ID:  0x01df            Assembly Version:  02.51
+ Date:         10-19-2019        Assembly Flags:    0x08
+ Version:      REV 51            CLEI Code:         CMMJA10BRB
+ ID: MX960 Backplane             FRU Model Number:  CHAS-BP3-MX960-S
+ Board Information Record:
+  Address 0x00: ad 01 08 00 88 d9 8f 28 4a 64 ff ff ff ff ff ff
+ I2C Hex Data:
+  Address 0x00: 7f b0 02 ff 01 df 02 33 52 45 56 20 35 31 00 00
+  Address 0x10: 00 00 00 00 37 35 30 2d 30 34 37 38 34 39 00 00
+  Address 0x20: 53 2f 4e 20 41 43 52 4d 36 34 36 30 08 13 0a 07
+  Address 0x30: e3 ff ff ff ad 01 08 00 88 d9 8f 28 4a 64 ff ff
+  Address 0x40: ff ff ff ff 01 43 4d 4d 4a 41 31 30 42 52 42 43
+  Address 0x50: 48 41 53 2d 42 50 33 2d 4d 58 39 36 30 2d 53 00
+  Address 0x60: 00 00 00 00 00 00 42 44 00 ff ff ff ff ff ff ff
+  Address 0x70: ff ff ff 1e ff ff ff ff ff ff ff ff ff ff ff ff
+FPM Board        REV 03   711-058968   ABDW8542          Front Panel Display
+
+
+
+
+root@re0.HYWRWIIO1CW> show pfe statistics error
+
+
+Slot 1
+
+
+
+HSL2 Errors:
+------------
+  *****  No errors on this PFE  *****
+
+
+JGCI Errors:
+------------
+
+
+                                                                Frames Received (last)           CRC Errors (last)
+                                                              ----------------------------------------------------
+
+
+  JGCI ASIC (48): XR2CHIP(0)
+
+
+  JGCI ASIC (49): XR2CHIP(1)
+
+
+  JGCI ASIC (42): XLCHIP(42)
+
+root@re0.HYWRWIIO1CW> show pfe statistics traffic
+
+Packet Forwarding Engine traffic statistics:
+    Input  packets:       11949394646910               431280 pps
+    Output packets:       11948526864114               437644 pps
+    Fabric Input  :       12820244437150               510339 pps
+    Fabric Output :       12820325788856               504861 pps
+Packet Forwarding Engine local traffic statistics:
+    Local packets input                 :           1058904006
+    Local packets output                :           3929844792
+    Software input control plane drops  :                    0
+    Software input high drops           :                    0
+    Software input medium drops         :                    0
+    Software input low drops            :                    0
+    Software output drops               :                    0
+    Hardware input drops                :                30240
+Packet Forwarding Engine local protocol statistics:
+    HDLC keepalives            :                    0
+    ATM OAM                    :                    0
+    Frame Relay LMI            :                    0
+    PPP LCP/NCP                :                    0
+    OSPF hello                 :                    0
+    OSPF3 hello                :                    0
+    RSVP hello                 :                    0
+    LDP hello                  :             57983758
+    BFD                        :                    0
+    IS-IS IIH                  :              4040107
+    LACP                       :            347697630
+    ARP                        :             15837573
+    ETHER OAM                  :                    0
+    Unknown                    :                   24
+Packet Forwarding Engine hardware discard statistics:
+    Timeout                    :                    0
+    Truncated key              :                    0
+    Bits to test               :                    0
+    Data error                 :                    0
+    TCP header length error    :                    0
+    Stack underflow            :                    0
+    Stack overflow             :                    0
+    Normal discard             :           2195696177
+    Extended discard           :                    0
+    Invalid interface          :                    0
+    Info cell drops            :                    0
+    Fabric drops               :                   81
+Packet Forwarding Engine Input IPv4 Header Checksum Error and Output MTU Error statistics:
+    Input Checksum             :                    3
+    Output MTU                 :                    0
