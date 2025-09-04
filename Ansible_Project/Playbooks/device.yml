@@ -1,0 +1,22 @@
+---
+- name: Get Junos device version information
+  hosts: 
+    - all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3 
+  connection: local 
+  gather_facts: no
+
+  tasks:
+    - name: Execute 'show version' command
+      junipernetworks.junos.junos_command:
+        commands:
+         - show version
+      register: junos_version_output
+
+    - name: Display the 'show version' output
+      ansible.builtin.debug:
+        var: junos_version_output.stdout_lines[0]	 
+
+
+
