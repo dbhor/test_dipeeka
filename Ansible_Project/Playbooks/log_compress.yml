@@ -1,0 +1,26 @@
+---
+- name: Get Junos device version information
+  hosts: 
+    - all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3 
+  connection: local 
+  gather_facts: no
+
+  tasks:
+    - name: Get timestamps for files
+      ansible.builtin.setup:
+        filter: "ansible_date_time"
+      delegate_to: localhost
+      run_once: true
+
+    - name: Compress logs and RSI files 
+      junipernetworks.junos.junos_command:
+        commands: "file archive compress source /var/log/* destination /var/tmp/{{ ansible_host }}_{{ ansible_date_time.date }}.tgz"
+      register: master_logs 
+
+    - name: Print log compression results
+      ansible.builtin.debug:
+       var: master_logs
+
+
