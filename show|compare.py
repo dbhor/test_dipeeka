@@ -10,7 +10,7 @@ that second operator will be committing both configurations. Problems ensue
 from jnpr.junos import Device
 from jnpr.junos.utils.config import Config
 from pprint import pprint
-dev = Device(host="10.219.39.118", user= "labroot", password="lab123", gather_facts= False)
+dev = Device(host="10.2.9.8", user= "", password="", gather_facts= False)
 dev.open()
 cu= Config(dev) ##To enter configuration mode
 diff= cu.diff()  ##running show pipe compare
