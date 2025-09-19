@@ -2,7 +2,7 @@ from jnpr.junos import Device
 from pprint import pprint
 devices_ip = ["10.85.173.182"]
 for dev_ip in devices_ip:
-    dev = Device(host=dev_ip, user="labroot",password="lab123",gather_facts=True)
+    dev = Device(host=dev_ip, user="",password="",gather_facts=True)
     dev.open()
     dev.timeout = 60
     facts = dev.facts
