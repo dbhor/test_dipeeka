@@ -31,7 +31,7 @@ def close(ssh_client):
 
 
 
-client = connect('10.1.1.10', '22', 'labroot', 'lab123')
+client = connect('10.1.1.10', '22', 'username', 'pass')
 shell= getshell(client)
 send_commands(shell, 'edit')
 send_commands(shell, 'sh int brief')
