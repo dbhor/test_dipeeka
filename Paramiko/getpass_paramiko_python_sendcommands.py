@@ -8,7 +8,7 @@ print('Connecting to 10.85.173.197')
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 password = getpass.getpass("Enter a password:")
 #next line is connecting to Junos device, where it will prompt the user to enter password in secure manner.
-ssh_client.connect(hostname = '10.85.173.197', port = 22 , username='labroot' , password= password, look_for_keys=False, allow_agent=False)
+ssh_client.connect(hostname = '10.5.1.17', port = 22 , username='' , password= password, look_for_keys=False, allow_agent=False)
 shell = ssh_client.invoke_shell()
 shell.send('show isis adjacency\n')
 time.sleep(1)
