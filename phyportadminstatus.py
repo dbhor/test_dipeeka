@@ -1,7 +1,7 @@
 from jnpr.junos.op.phyport import *
 from jnpr.junos import Device
 
-dev= Device(host="10.85.173.182", user="labroot", password="lab123")
+dev= Device(host="10.85.1.82", user="", password="")
 dev.open()
 ports = PhyPortTable(dev).get()
 print(ports.key)
