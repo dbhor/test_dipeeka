@@ -4,7 +4,6 @@ from pprint import pprint
 import time
 import getpass
 ssh_client = paramiko.SSHClient()
-print('Connecting to 10.85.173.197')
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 password = getpass.getpass("Enter a password:")
 #next line is connecting to Junos device, where it will prompt the user to enter password in secure manner.
