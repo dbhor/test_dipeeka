@@ -5,7 +5,7 @@ client = paramiko.SSHClient()
 print('Connecting to 10.85.173.197')
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 password = getpass.getpass("Enter a password:")
-router = {hostname = '10.85.173.197', port = 22 , username='labroot' , password= password} // created a dictionary object router, which has keys and values.
+router = {hostname = '10.5.73.17', port = 22 , username='' , password= password} // created a dictionary object router, which has keys and values.
 client.connect( **router, look_for_keys=False, allow_agent=False)
 shell = client.invoke_shell()
 shell.send('edit')
