@@ -2,7 +2,6 @@ import paramiko
 import time
 import getpass
 client = paramiko.SSHClient()
-print('Connecting to 10.85.173.197')
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 password = getpass.getpass("Enter a password:")
 router = {hostname = '10.5.73.17', port = 22 , username='' , password= password} // created a dictionary object router, which has keys and values.
